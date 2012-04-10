@@ -1,0 +1,9 @@
+A (slow) project attempting to use te Love2D engine with libpd as a sound resouce.
+
+The to do list looks something like:
+ - Finish luapd wrapper for libpd.
+ - Make a nice lua file (lovepd.lua) for the Love2D engine to interface with libpd.
+ - Make a tiny prototype to show off some features.
+ - Figure how the hell I'm going to make it work on Windows.
+
+I'll see how I get on.
