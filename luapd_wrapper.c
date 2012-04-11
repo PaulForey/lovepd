@@ -1,4 +1,4 @@
-#include "libpd/libpd_wrapper/z_libpd.h"
+#include "z_libpd.h"
 #include "lua.h"
 #include <stdio.h>
 
@@ -90,8 +90,8 @@ static int luapd_add_symbol(lua_State *L) {
 
 static int luapd_finish_message(lua_State *L) {
 	const char *receiver = lua_tostring(L, 1);
-	const char *message = lua_tostring(L, 2);
-	lua_pushinteger(L, libpd_finish_message(receiver, message));
+	const char *selector = lua_tostring(L, 2);
+	lua_pushinteger(L, libpd_finish_message(receiver, selector));
 	return 1;
 }
 

@@ -1,0 +1,275 @@
+In file included from /Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:24:
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:29:18: error: lua.h: No such file or directory
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:30:21: error: lualib.h: No such file or directory
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:31:22: error: lauxlib.h: No such file or directory
+In file included from /Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:43:
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/libraries/luasocket/luasocket.h:25:28: error: common/runtime.h: No such file or directory
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:87: error: ISO C++ forbids declaration of 'luaL_Reg' with no type
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:87: error: expected ';' before '*' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:90: error: ISO C++ forbids declaration of 'lua_CFunction' with no type
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:90: error: expected ';' before '*' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:100: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:100: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:100: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:100: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:106: error: variable or field 'luax_printstack' declared void
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:106: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:106: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:115: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:115: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:115: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:115: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:123: error: variable or field 'luax_pushboolean' declared void
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:123: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:123: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:123: error: expected primary-expression before 'bool'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:123: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:132: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:132: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:132: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:132: error: expected primary-expression before 'bool'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:132: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:141: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:141: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:141: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:149: error: variable or field 'luax_pushstring' declared void
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:149: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:149: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:149: error: expected primary-expression before 'str'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:149: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:157: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:157: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:157: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:157: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:166: error: redefinition of 'int love::luax_assert_argc'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:157: error: 'int love::luax_assert_argc' previously defined here
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:166: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:166: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:166: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:166: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:173: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:173: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:173: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:173: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:179: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:179: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:179: error: expected primary-expression before 'const'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:179: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:186: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:186: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:186: error: 'lua_CFunction' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:186: error: expected primary-expression before 'const'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:186: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:194: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:194: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:194: error: expected primary-expression before 'const'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:194: error: expected primary-expression before 'const'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:194: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:203: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:203: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:203: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:203: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:203: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:203: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:212: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:212: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:212: error: 'lua_CFunction' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:212: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:212: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:222: error: variable or field 'luax_newtype' declared void
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:222: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:222: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:222: error: expected primary-expression before 'const'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:222: error: expected primary-expression before 'flags'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:222: error: expected primary-expression before 'void'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:222: error: expected primary-expression before 'bool'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:222: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:231: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:231: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:231: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:231: error: expected primary-expression before 'type'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:231: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:238: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:238: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:238: error: expected primary-expression before 'const'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:238: error: expected primary-expression before 'const'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:238: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:252: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:252: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:252: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:252: error: expected primary-expression before 'const'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:252: error: expected primary-expression before 'const'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:252: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:267: error: redefinition of 'int love::luax_convobj'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:252: error: 'int love::luax_convobj' previously defined here
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:267: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:267: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:267: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:267: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:267: error: expected primary-expression before 'const'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:267: error: expected primary-expression before 'const'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:279: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:279: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:279: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:279: error: expected primary-expression before 'const'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:279: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:285: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:285: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:285: error: expected primary-expression before 'const'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:285: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:291: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:291: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:291: error: expected primary-expression before 'const'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:291: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:299: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:299: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:299: error: expected primary-expression before 'r'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:299: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:301: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:301: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:301: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:301: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:310: error: 'love::luax_tofloat' declared as an 'inline' variable
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:310: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:310: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:310: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:310: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:311: error: expected ',' or ';' before '{' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:320: error: 'love::luax_checkfloat' declared as an 'inline' variable
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:320: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:320: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:320: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:320: error: initializer expression list treated as compound expression
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:321: error: expected ',' or ';' before '{' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:335: error: template declaration of 'T* love::luax_totype'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:335: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:335: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:335: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:335: error: expected primary-expression before 'const'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:335: error: expected primary-expression before ')' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:349: error: template declaration of 'T* love::luax_checktype'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:349: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:349: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:349: error: expected primary-expression before 'int'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:349: error: expected primary-expression before 'const'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:349: error: expected primary-expression before 'type'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:363: error: template declaration of 'T* love::luax_getmodule'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:363: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:363: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:363: error: expected primary-expression before 'const'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/common/runtime.h:363: error: expected primary-expression before 'type'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/libraries/luasocket/luasocket.h:31: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/libraries/luasocket/luasocket.h:31: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/libraries/luasocket/luasocket.h:36: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/libraries/luasocket/luasocket.h:36: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/libraries/luasocket/luasocket.h:37: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/libraries/luasocket/luasocket.h:37: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/libraries/luasocket/luasocket.h:38: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/libraries/luasocket/luasocket.h:38: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/libraries/luasocket/luasocket.h:39: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/libraries/luasocket/luasocket.h:39: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/libraries/luasocket/luasocket.h:40: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/libraries/luasocket/luasocket.h:40: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/libraries/luasocket/luasocket.h:41: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/libraries/luasocket/luasocket.h:41: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/libraries/luasocket/luasocket.h:42: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/libraries/luasocket/luasocket.h:42: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/libraries/luasocket/luasocket.h:43: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/libraries/luasocket/luasocket.h:43: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:57: warning: 'luaopen_love_audio' initialized and declared 'extern'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:57: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:57: error: expected primary-expression before ')' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:58: warning: 'luaopen_love_event' initialized and declared 'extern'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:58: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:58: error: expected primary-expression before ')' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:59: warning: 'luaopen_love_filesystem' initialized and declared 'extern'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:59: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:59: error: expected primary-expression before ')' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:60: warning: 'luaopen_love_font' initialized and declared 'extern'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:60: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:60: error: expected primary-expression before ')' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:61: warning: 'luaopen_love_graphics' initialized and declared 'extern'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:61: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:61: error: expected primary-expression before ')' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:62: warning: 'luaopen_love_image' initialized and declared 'extern'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:62: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:62: error: expected primary-expression before ')' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:63: warning: 'luaopen_love_joystick' initialized and declared 'extern'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:63: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:63: error: expected primary-expression before ')' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:64: warning: 'luaopen_love_keyboard' initialized and declared 'extern'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:64: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:64: error: expected primary-expression before ')' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:65: warning: 'luaopen_love_mouse' initialized and declared 'extern'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:65: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:65: error: expected primary-expression before ')' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:66: warning: 'luaopen_love_physics' initialized and declared 'extern'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:66: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:66: error: expected primary-expression before ')' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:67: warning: 'luaopen_love_sound' initialized and declared 'extern'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:67: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:67: error: expected primary-expression before ')' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:68: warning: 'luaopen_love_timer' initialized and declared 'extern'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:68: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:68: error: expected primary-expression before ')' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:69: warning: 'luaopen_love_thread' initialized and declared 'extern'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:69: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:69: error: expected primary-expression before ')' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:72: error: 'luaL_Reg' does not name a type
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:95: warning: 'luaopen_love' initialized and declared 'extern'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:95: error: 'lua_State' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:95: error: 'L' was not declared in this scope
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:96: error: expected ',' or ';' before '{' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:250: error: expected constructor, destructor, or type conversion before '(' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:255: error: ISO C++ forbids declaration of 'wostream' with no type
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:255: error: explicit instantiation of non-template 'int wostream'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:255: error: expected `;' before '&' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:259: error: ISO C++ forbids declaration of 'ostream' with no type
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:259: error: explicit instantiation of non-template 'int ostream'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:259: error: expected `;' before '&' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:260: error: ISO C++ forbids declaration of 'ostream' with no type
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:260: error: explicit instantiation of non-template 'int ostream'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:260: error: expected `;' before '&' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:261: error: ISO C++ forbids declaration of 'ostream' with no type
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:261: error: explicit instantiation of non-template 'int ostream'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:261: error: expected `;' before '&' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:263: error: ISO C++ forbids declaration of 'ostream' with no type
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:263: error: explicit instantiation of non-template 'int ostream'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:263: error: expected `;' before '&' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:264: error: ISO C++ forbids declaration of 'ostream' with no type
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:264: error: explicit instantiation of non-template 'int ostream'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:264: error: expected `;' before '&' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:266: error: ISO C++ forbids declaration of 'ostream' with no type
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:266: error: explicit instantiation of non-template 'int ostream'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:266: error: expected `;' before '&' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:267: error: ISO C++ forbids declaration of 'ostream' with no type
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:267: error: explicit instantiation of non-template 'int ostream'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:267: error: expected `;' before '&' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:268: error: ISO C++ forbids declaration of 'ostream' with no type
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:268: error: explicit instantiation of non-template 'int ostream'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:268: error: expected `;' before '&' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:271: error: ISO C++ forbids declaration of 'wostream' with no type
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:271: error: explicit instantiation of non-template 'int wostream'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:271: error: expected `;' before '&' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:272: error: ISO C++ forbids declaration of 'wostream' with no type
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:272: error: explicit instantiation of non-template 'int wostream'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:272: error: expected `;' before '&' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:273: error: ISO C++ forbids declaration of 'wostream' with no type
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:273: error: explicit instantiation of non-template 'int wostream'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:273: error: expected `;' before '&' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:275: error: ISO C++ forbids declaration of 'wostream' with no type
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:275: error: explicit instantiation of non-template 'int wostream'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:275: error: expected `;' before '&' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:276: error: ISO C++ forbids declaration of 'wostream' with no type
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:276: error: explicit instantiation of non-template 'int wostream'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:276: error: expected `;' before '&' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:278: error: ISO C++ forbids declaration of 'wostream' with no type
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:278: error: explicit instantiation of non-template 'int wostream'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:278: error: expected `;' before '&' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:279: error: ISO C++ forbids declaration of 'wostream' with no type
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:279: error: explicit instantiation of non-template 'int wostream'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:279: error: expected `;' before '&' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:280: error: ISO C++ forbids declaration of 'wostream' with no type
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:280: error: explicit instantiation of non-template 'int wostream'
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:280: error: expected `;' before '&' token
+/Users/paul/Development/lovepd/love/platform/macosx/../../src/love.cpp:289: error: expected constructor, destructor, or type conversion before 'int'

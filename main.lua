@@ -1,6 +1,8 @@
-HC = require("hardoncollider")
-require("Explosion")
-require("Missile")
+HC = require "hardoncollider"
+require "Explosion"
+require "Missile"
+require "luapd_wrapper"
+require "lovepd"
 
 function love.load()
 	-- Init the hardoncollider library:
@@ -11,6 +13,18 @@ function love.load()
 
 	-- Some graphics set up:
 	love.graphics.setBackgroundColor(0,0,0)
+
+	lovepd:init("lua-test.pd", "./", 44100, 64, 0, 2)
+
+	--lovepd_printhook(print)
+
+	luapd_send_message("lua-test-2-start", "float", 8)
+
+	for i=0,10*lovepd.samplerate/lovepd.blocksize do
+		lovepd:process_block()
+	end
+
+	--for i,v in ipairs(lovepd_get_output_buffer()) do print(i, v) end
 end
 
 function love.mousepressed(x, y, button)

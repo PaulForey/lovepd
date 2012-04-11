@@ -1,4 +1,5 @@
-require("luapd_wrapper")
+require "luapd_wrapper"
+--require "love.sound"
 
 lovepd = {}
 
@@ -47,17 +48,20 @@ end
 -- The following function needs to have some polymorphism.
 -- Need to look that up.
 -- RESULT: we do it with passing a table. Look up "default values".
---[[
-function luapd_send_message(arg)
---]]
 
-lovepd:init("lua-test.pd", "./", 44100, 64, 0, 2)
+function luapd_send_message(...)
+	local msglength = #arg
+	local receiver = arg[1]
+	local selector = arg[2]
 
---lovepd_printhook(print)
-
-for i=0,10*lovepd.samplerate/lovepd.blocksize do
-	lovepd:process_block()
+	luapd_start_message(msglength)
+	for i=msglength,3,-1 do
+		if type(arg[i]) == "string" then luapd_add_symbol(arg[i])
+		elseif type(arg[i]) == "number" then luapd_add_float(arg[i])
+		end
+	end
+	luapd_finish_message(receiver, selector)
 end
 
---for i,v in ipairs(lovepd_get_output_buffer()) do print(i, v) end
+
 
