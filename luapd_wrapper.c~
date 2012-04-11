@@ -17,7 +17,7 @@
  */
 
 static void luapd_print(const char *s) {
-	printf("luapd_print: %s", s);
+	printf("%s", s);
 }
 
 static int luapd_init(lua_State *L) {
