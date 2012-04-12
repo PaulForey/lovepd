@@ -63,5 +63,11 @@ function luapd_send_message(...)
 	luapd_finish_message(receiver, selector)
 end
 
+lovepd:init("lua-test.pd", "./", 44100, 64, 1, 2)
+
+lovepd:process_block()
+
+for i,v in ipairs(lovepd:get_output_buffer()) do print(i, v) end
+
 
 
