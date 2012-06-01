@@ -16,7 +16,7 @@ function Missile.create(startx, starty, destx, desty)
 	missile.color = {255,10,10}
 	missile.width = 3
 	missile.height = 10
-	missile.speed = 50
+	missile.speed = 100
 	missile.angle = 0
 	missile.rect = Collider:addRectangle(missile.x,
 									missile.y,

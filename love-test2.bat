@@ -1,0 +1,1 @@
+love C:\Users\Paul\Development\lovepd --console

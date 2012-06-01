@@ -1,19 +1,24 @@
+require "debug"
 HC = require "hardoncollider"
 require "Explosion"
 require "Missile"
-require "luapd_wrapper"
-require "lovepd"
+--require "luapd_wrapper"
+--require "lovepd"
 
 function love.load()
+    print("The start of my shit!")
 	-- Init the hardoncollider library:
 	Collider = HC(100, onCollision, onCollisionStop)
 
 	-- Create the table I'm going to use to store the graphics (sprites really)
 	graphics = {}
+    
+    fps = 0
 
 	-- Some graphics set up:
 	love.graphics.setBackgroundColor(0,0,0)
 
+    --[[
 	lovepd:init("lua-test.pd", "./", 44100, 64, 0, 2)
 
 	--lovepd_printhook(print)
@@ -23,6 +28,7 @@ function love.load()
 	for i=0,10*lovepd.samplerate/lovepd.blocksize do
 		lovepd:process_block()
 	end
+    --]]
 
 	--for i,v in ipairs(lovepd_get_output_buffer()) do print(i, v) end
 end
@@ -32,6 +38,7 @@ function love.mousepressed(x, y, button)
 		-- Create a Missile in the graphics table:
 		table.insert(graphics, Missile.create(love.graphics.getWidth()/2,
 									love.graphics.getHeight()-50, x, y))
+        print("Missile spawned!")
 	end
 end
 
