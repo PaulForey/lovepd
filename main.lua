@@ -3,7 +3,7 @@ HC = require "hardoncollider"
 require "Explosion"
 require "Missile"
 --require "luapd_wrapper"
---require "lovepd"
+require "lovepd"
 
 function love.load()
     print("The start of my shit!")
@@ -19,18 +19,26 @@ function love.load()
 	love.graphics.setBackgroundColor(0,0,0)
 
     --[[
-	lovepd:init("lua-test.pd", "./", 44100, 64, 0, 2)
+    samplerate = 44100
+    blocksize = 64
+    inputchannels = 0
+    outputchannels = 2
+    --]]
+    print("initing lovepd")
+    lovepd:init("lua-test.pd", "./")
+    print("lovepd initted")
+	--lovepd:printhook(print) PRINTHOOK don't exist yet!
 
-	--lovepd_printhook(print)
+    lovepd:send_message("lua-test-2-start", "float", 8)
 
-	luapd_send_message("lua-test-2-start", "float", 8)
-
+    --[[
 	for i=0,10*lovepd.samplerate/lovepd.blocksize do
-		lovepd:process_block()
+        lovepd:process_block()
 	end
+
+	for i,v in ipairs(lovepd:get_output_buffer()) do print(i, v) end
     --]]
 
-	--for i,v in ipairs(lovepd_get_output_buffer()) do print(i, v) end
 end
 
 function love.mousepressed(x, y, button)
@@ -58,11 +66,29 @@ function love.update(dt)
 
 	-- Update hardoncollider:
 	Collider:update(dt)
+
+    -- Update Pure Data:
+    --lovepd:process_block()
+    --[[
+    soundData = love.sound.newSoundData(blocksize, samplerate, 16, outputchannels)
+    lovepd:process_block()
+    for i,v in ipairs(lovepd:get_output_buffer()) do 
+        soundData.setSample(i, v)
+    end
+    source = love.audio.newSource(soundData)
+    source:play()
+    --]]
+    
 end
 
 function love.draw()
 	-- Iterate over and draw the explosions list:
-	for i, v in ipairs(graphics) do v:draw() end
+	for i,v in ipairs(graphics) do v:draw() end
+    -- love.graphics.print(lovepd:get_output_buffer()[1], 100, 100)
+end
+
+function love.quit()
+    lovepd:finish()
 end
 
 function onCollision(dt, shapeOne, shapeTwo, mtvX, mtvY)
@@ -78,6 +104,7 @@ end
 function onCollisionStop(dt, shapeOne, shapeTwo)
 	--print("Collision stopped!")
 end
+
 
 
 

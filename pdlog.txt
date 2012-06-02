@@ -1,0 +1,42 @@
+luapd_print: Print this!
+luapd_print: Attempting to open file
+luapd_print: lua-test-1: 0
+luapd_print: Attempted to open file
+luapd_print:     initting libpd ...
+luapd_print:     initting libpd success
+luapd_print:     initting portaudio ...
+luapd_print:     initting portaudio success
+luapd_print: lua-test-2: 16
+luapd_print: lua-test-1: 1
+luapd_print: lua-test-1: 2
+luapd_print: lua-test-1: 3
+luapd_print: lua-test-1: 4
+luapd_print: lua-test-1: 5
+luapd_print: lua-test-1: 6
+luapd_print: lua-test-1: 7
+luapd_print: lua-test-1: 8
+luapd_print: lua-test-1: 9
+luapd_print: lua-test-1: 10
+luapd_print: lua-test-1: 11
+luapd_print: lua-test-1: 12
+luapd_print: lua-test-1: 13
+luapd_print: lua-test-1: 14
+luapd_print: lua-test-1: 15
+luapd_print: lua-test-1: 16
+luapd_print: lua-test-1: 17
+luapd_print: lua-test-1: 18
+luapd_print: lua-test-1: 19
+luapd_print: lua-test-1: 20
+luapd_print: lua-test-1: 21
+luapd_print: lua-test-1: 22
+luapd_print: lua-test-1: 23
+luapd_print: lua-test-1: 24
+luapd_print: lua-test-1: 25
+luapd_print: lua-test-1: 26
+luapd_print: lua-test-1: 27
+luapd_print: lua-test-1: 28
+luapd_print: lua-test-1: 29
+luapd_print: lua-test-1: 30
+luapd_print: lua-test-1: 31
+luapd_print: lua-test-1: 32
+luapd_print: lua-test-1: 33

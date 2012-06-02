@@ -1,4 +1,4 @@
-#N canvas 552 202 450 300 10;
+#N canvas -1079 274 569 456 10;
 #X obj 42 104 * 2;
 #X obj 188 88 osc~ 440;
 #X obj 188 110 *~ 0.1;
@@ -10,17 +10,13 @@
 #X obj 293 112 f 0;
 #X obj 320 113 + 1;
 #X obj 293 134 print lua-test-1;
-#X obj 150 257 obey;
-#X obj 150 215 bang;
-#X obj 150 236 until;
 #X connect 0 0 4 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
 #X connect 2 0 3 1;
 #X connect 5 0 0 0;
 #X connect 6 0 7 0;
+#X connect 7 0 8 0;
 #X connect 8 0 9 0;
 #X connect 8 0 10 0;
 #X connect 9 0 8 1;
-#X connect 12 0 13 0;
-#X connect 13 0 11 0;
