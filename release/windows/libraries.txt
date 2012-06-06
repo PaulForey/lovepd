@@ -1,0 +1,77 @@
+﻿The source code for the projects and libraries used in the binaries love.exe,
+DevIL.dll, mpg123.dll, OpenAL32.dll and SDL.dll can be obtained here:
+
+https://bitbucket.org/Boolsheet/love_winbin/downloads/love-libraries-src.zip
+
+
+== Library reference
+
+Box2D         2.2.1     [1]     http://www.box2d.org
+DevIL         1.7.8             http://openil.sourceforge.net
+FreeType      2.4.9             http://www.freetype.org
+GLee          5.33      [1]     http://elf-stone.com/glee.php
+JasPer        1.900.1           http://www.ece.uvic.ca/~mdadams/jasper/
+libjpeg       8d                http://www.ijg.org
+libmodplug    0.8.8.4           http://modplug-xmms.sourceforge.net
+libogg        1.3.0             http://www.xiph.org/downloads/
+libvorbis     1.3.2             http://www.xiph.org/downloads/
+libpng        1.5.10            http://www.libpng.org/pub/png/libpng.html
+libTIFF       3.9.5             http://www.remotesensing.org/libtiff/
+Lua           5.1.5             http://www.lua.org
+LÖVE          0.8.0             http://love2d.org
+luasocket     2.0.2     [1]     http://w3.impa.br/~diego/software/luasocket/
+LZMA SDK      4.57      [2]     http://www.7-zip.org/sdk.html
+mpg123        1.14.2            http://www.mpg123.de
+OpenAL Soft   1.14              http://kcat.strangesoft.net/openal.html
+PhysicsFS     2.0.2             http://icculus.org/physfs/
+SDL           1.2.15            http://www.libsdl.org
+UTF8-CPP      2.3.1     [1]     http://sourceforge.net/projects/utfcpp/
+zlib          1.2.7             http://zlib.net
+
+[1]: Included in LÖVE source code.
+[2]: Included in PhysicsFS source code.
+
+
+== DevIL configuration
+
+DevIL.dll is built with support for PNG, JPEG, JPEG 2000, TIFF and all formats
+that don't require external libraries.
+
+
+== Dependency tree
+
+love.exe
+  |  Box2D
+  |  DevIL (DLL import)
+  |  FreeType
+  |  GLee
+  |  libmodplug
+  |  libvorbis
+  |  \  libogg
+  |  Lua
+  |  luasocket
+  |  mpg123 (DLL import)
+  |  OpenAL Soft (DLL import)
+  |  PhysicsFS
+  |  \  zlib
+  |  SDL (DLL import)
+  \  UTF8-CPP
+
+DevIL.dll
+  |  JasPer
+  |  libjpeg
+  |  libpng
+  |  \  zlib
+  |  libTIFF
+  |  |  libjpeg
+  |  \  zlib
+  \  zlib
+
+mpg123.dll
+  \ (none)
+
+OpenAL32.dll
+  \ (none)
+
+SDL.dll
+  \ (none)

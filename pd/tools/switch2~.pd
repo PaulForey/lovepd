@@ -1,0 +1,37 @@
+#N canvas 351 219 676 597 12;
+#X obj 23 22 inlet;
+#X obj 124 310 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 266 312 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 35 97 1;
+#X obj 71 96 0;
+#X obj 34 130 0;
+#X obj 70 129 1;
+#X msg 220 105 0;
+#X msg 152 98 0;
+#X obj 63 251 inlet~;
+#X obj 194 259 inlet~;
+#X obj 94 347 spigot~;
+#X obj 114 457 outlet~;
+#X obj 34 53 select 1 2;
+#X obj 236 349 spigot~;
+#X connect 0 0 13 0;
+#X connect 1 0 11 1;
+#X connect 2 0 14 1;
+#X connect 3 0 1 0;
+#X connect 4 0 2 0;
+#X connect 5 0 1 0;
+#X connect 6 0 2 0;
+#X connect 7 0 2 0;
+#X connect 8 0 1 0;
+#X connect 9 0 11 0;
+#X connect 10 0 14 0;
+#X connect 11 1 12 0;
+#X connect 13 0 3 0;
+#X connect 13 0 4 0;
+#X connect 13 1 5 0;
+#X connect 13 1 6 0;
+#X connect 13 2 8 0;
+#X connect 13 2 7 0;
+#X connect 14 1 12 0;

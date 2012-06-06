@@ -1,0 +1,20 @@
+#N canvas 503 338 553 200 10;
+#X obj 10 129 list prepend;
+#X msg 10 153 \; \$1 \$2;
+#X obj 10 105 spigot;
+#X msg 91 105 \$1-\$2-in;
+#X obj 91 57 r \$1-set-out;
+#X text 192 16 \$1 = The connection component.;
+#X text 192 63 \$3 = The param we're using.;
+#X obj 10 9 r \$2-\$3-out;
+#X text 192 33 \$2 = The synth-node component the connection component
+is connected from.;
+#X obj 91 81 list append \$3;
+#X obj 43 33 r \$1-enable-connection;
+#X connect 0 0 1 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 1;
+#X connect 4 0 9 0;
+#X connect 7 0 2 0;
+#X connect 9 0 3 0;
+#X connect 10 0 2 1;

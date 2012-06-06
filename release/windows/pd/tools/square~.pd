@@ -1,0 +1,12 @@
+#N canvas 816 589 450 300 10;
+#X obj 113 244 outlet~;
+#X obj 114 116 osc~ \$1;
+#X obj 230 53 inlet phase;
+#X obj 114 150 *~ 2e+010;
+#X obj 114 180 clip~ -0.9 0.9;
+#X obj 43 34 inlet~ freq;
+#X connect 1 0 3 0;
+#X connect 2 0 1 1;
+#X connect 3 0 4 0;
+#X connect 4 0 0 0;
+#X connect 5 0 1 0;

@@ -1,0 +1,16 @@
+#N canvas 680 387 450 300 10;
+#X obj 73 194 throw~ master-reverb;
+#X obj 72 143 *~;
+#X obj 149 87 line~;
+#X obj 59 58 inlet~;
+#X obj 231 44 loadbang;
+#X obj 231 69 \$2;
+#X msg 231 94 \$1 10;
+#X obj 148 12 r \$1-set-reverb-gain;
+#X connect 1 0 0 0;
+#X connect 2 0 1 1;
+#X connect 3 0 1 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 6 0 2 0;
+#X connect 7 0 2 0;

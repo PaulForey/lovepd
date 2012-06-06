@@ -1,0 +1,8 @@
+#N canvas 721 503 364 97 10;
+#X obj 17 10 inlet;
+#X obj 17 59 s \$1-to-game;
+#X obj 99 59 s to-game;
+#X obj 99 39 list prepend \$1;
+#X connect 0 0 1 0;
+#X connect 0 0 3 0;
+#X connect 3 0 2 0;

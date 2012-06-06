@@ -1,0 +1,14 @@
+#N canvas 1077 540 311 228 10;
+#X obj 13 10 hsl 128 13 1 22050 1 0 \$0-sl-s \$0-sl-r empty -2 -8 0
+10 -66577 -228856 -1 880 1;
+#X obj 32 148 - 1;
+#X obj 32 65 + 1;
+#X obj 32 127 r \$0-sl-s;
+#X obj 32 105 s \$0-sl-r;
+#X obj 32 45 inlet;
+#X obj 32 169 outlet;
+#X connect 1 0 6 0;
+#X connect 2 0 4 0;
+#X connect 3 0 1 0;
+#X connect 5 0 2 0;
+#X coords 0 -1 1 1 134 14 2 10 10;

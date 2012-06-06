@@ -1,0 +1,15 @@
+#N canvas 741 225 450 300 10;
+#X obj 118 58 * 10;
+#X obj 118 80 exp;
+#X obj 118 36 inlet;
+#X obj 118 202 outlet;
+#X obj 118 180 * \$1;
+#X obj 118 107 - 1;
+#X obj 118 128 / 22025.5;
+#X connect 0 0 1 0;
+#X connect 1 0 5 0;
+#X connect 2 0 0 0;
+#X connect 4 0 3 0;
+#X connect 5 0 6 0;
+#X connect 6 0 4 0;
+#X coords 0 300 1 299 70 17 0;

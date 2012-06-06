@@ -1,0 +1,15 @@
+#N canvas 1187 519 326 305 12;
+#X obj 18 138 outlet~;
+#X obj 18 79 *~;
+#X obj 140 59 sig~ \$1;
+#X obj 140 34 inlet;
+#X obj 18 37 *~ 16;
+#X obj 18 104 wrap~;
+#X obj 18 11 r~ global-tempo-phasor;
+#X text 12 185 \$1 = Initial multiple of phasor freq.;
+#X connect 1 0 5 0;
+#X connect 2 0 1 1;
+#X connect 3 0 2 0;
+#X connect 4 0 1 0;
+#X connect 5 0 0 0;
+#X connect 6 0 4 0;

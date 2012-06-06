@@ -1,0 +1,8 @@
+luapd_print: Print this!
+luapd_print: Attempting to open file
+luapd_print: Attempted to open file
+luapd_print:     initting libpd ...
+luapd_print:     initting libpd success
+luapd_print:     initting portaudio ...
+luapd_print:     initting portaudio success
+luapd_print: lua-test-2: 16

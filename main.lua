@@ -46,7 +46,7 @@ function love.mousepressed(x, y, button)
 		-- Create a Missile in the graphics table:
 		table.insert(graphics, Missile.create(love.graphics.getWidth()/2,
 									love.graphics.getHeight()-50, x, y))
-        print("Missile spawned!")
+        --print("Missile spawned!")
 	end
 end
 

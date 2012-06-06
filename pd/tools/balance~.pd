@@ -1,0 +1,48 @@
+#N canvas 160 102 532 426 10;
+#X obj 165 249 purepanner~;
+#X obj 102 17 inlet pan;
+#X obj 16 227 inlet~ L;
+#X obj 165 229 inlet~ R;
+#X obj 16 319 outlet~;
+#X obj 165 320 outlet~;
+#X obj 16 248 purepanner~;
+#X obj 166 64 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 6350 1;
+#X obj 155 131 sig~;
+#X text 179 48 L;
+#X text 269 47 R;
+#X obj 341 11 loadbang;
+#X obj 350 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 343 62 f 0.5;
+#X obj 152 154 lop~ 10;
+#X obj 154 180 -~ 0.5;
+#X obj 291 204 *~ 2;
+#X obj 291 183 +~ 0;
+#X obj 154 201 *~ 2;
+#X text 206 47 Balance;
+#X obj 268 141 0.5;
+#X text 196 82 Center:;
+#X obj 244 84 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 0 0 4 0;
+#X connect 0 1 5 0;
+#X connect 1 0 7 0;
+#X connect 2 0 6 0;
+#X connect 3 0 0 0;
+#X connect 6 0 4 0;
+#X connect 6 1 5 0;
+#X connect 7 0 8 0;
+#X connect 8 0 14 0;
+#X connect 11 0 13 0;
+#X connect 12 0 13 0;
+#X connect 13 0 7 0;
+#X connect 14 0 17 0;
+#X connect 14 0 15 0;
+#X connect 15 0 18 0;
+#X connect 16 0 0 1;
+#X connect 17 0 16 0;
+#X connect 18 0 6 1;
+#X connect 20 0 7 0;
+#X connect 22 0 20 0;
+#X coords 0 -1 1 1 145 57 2 156 47;

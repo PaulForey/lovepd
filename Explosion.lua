@@ -21,6 +21,8 @@ function Explosion.create(x, y)
 									explosion.y,
 									explosion.radius) 
 	explosion.circle.parent = explosion
+    lovepd:send_message("explosion", "bang")
+
 	return explosion
 end
 

@@ -23,6 +23,7 @@ function Missile.create(startx, starty, destx, desty)
 									missile.width,
 									missile.height)
 	missile.rect.parent = missile
+    lovepd:send_message("missile-fire", "bang")
 
 	-- Draw the missile's image to a canvas:
 	missile.canvas = love.graphics.newCanvas(missile.width, missile.height)

@@ -1,0 +1,8 @@
+#N canvas 802 391 291 131 10;
+#X msg 11 33 set \$1;
+#X obj 11 82 outlet~;
+#X obj 11 9 r \$1-set-\$2-source;
+#X obj 11 58 r~ default1;
+#X connect 0 0 3 0;
+#X connect 2 0 0 0;
+#X connect 3 0 1 0;

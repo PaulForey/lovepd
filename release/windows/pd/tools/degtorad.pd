@@ -1,0 +1,17 @@
+#N canvas 0 22 450 300 10;
+#X obj 190 186 *;
+#X obj 209 161 /;
+#X obj 251 134 180;
+#X obj 242 71 loadbang;
+#X obj 233 99 t b b;
+#X obj 191 131 3.14159;
+#X obj 112 78 inlet degrees;
+#X obj 155 241 outlet radians;
+#X connect 0 0 7 0;
+#X connect 1 0 0 1;
+#X connect 2 0 1 1;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 4 1 2 0;
+#X connect 5 0 1 0;
+#X connect 6 0 0 0;

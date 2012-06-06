@@ -1,4 +1,4 @@
-require "luapd_wrapper"
+require "luapd"
 --require "love.sound"
 
 lovepd = {}

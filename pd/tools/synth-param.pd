@@ -1,0 +1,46 @@
+#N canvas 432 399 585 336 10;
+#X msg 76 92 0;
+#X obj 76 112 f;
+#X obj 31 136 f;
+#X obj 13 208 f;
+#X obj 31 160 * 0.5;
+#X obj 31 184 +;
+#X obj 63 184 * 0.5;
+#X obj 31 30 r synth-param-update;
+#X obj 76 72 r synth-param-prepare;
+#X obj 13 8 r synth-param-transmit;
+#X obj 13 280 s \$1-\$2-out;
+#X obj 49 51 r \$1-\$2-in;
+#X text 221 16 \$2 = The param we are dealing with e.g. amplitude \,
+distortion etc.;
+#X text 221 1 \$1 = The parent component's name;
+#X text 221 46 \$3 = The box to contain the mathematical operation
+\, e.g. + for accumulator \, max to select the highest out of all the
+inputs etc.;
+#X text 101 177 <-- This math is for smoothing. this should eventually
+depend on timestep;
+#X obj 13 232 +;
+#X obj 43 208 r \$1-\$2-offset;
+#X text 221 90 \$4 \, \$5 = min and max value for the parameter;
+#X obj 13 256 clip \$4 \$5;
+#X text 107 120 prepare \, transmit and update are called in that order
+every period. signals go through nodes gradually in lock-step \, so
+there shouldn't be any problems with cycles or anything;
+#X obj 49 112 +;
+#X connect 0 0 1 0;
+#X connect 1 0 21 1;
+#X connect 1 0 2 1;
+#X connect 2 0 4 0;
+#X connect 3 0 16 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 5 0 3 1;
+#X connect 6 0 5 1;
+#X connect 7 0 2 0;
+#X connect 8 0 0 0;
+#X connect 9 0 3 0;
+#X connect 11 0 21 0;
+#X connect 16 0 19 0;
+#X connect 17 0 16 1;
+#X connect 19 0 10 0;
+#X connect 21 0 1 0;

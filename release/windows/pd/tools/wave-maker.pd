@@ -1,0 +1,72 @@
+#N canvas 209 301 662 524 10;
+#X obj 63 145 until;
+#X msg 172 209 1;
+#X obj 121 285 f 1;
+#X obj 200 407 list;
+#X msg 251 147 bang;
+#X obj 117 407 list prepend;
+#X obj 43 419 list;
+#X obj 43 440 list trim;
+#X obj 30 31 inlet;
+#X obj 29 503 outlet;
+#X obj 95 166 + 1;
+#X obj 95 232 sel 0;
+#X msg 71 301 0;
+#X text 273 9 \$1 = "sinesum" or "cosinesum" whatever.;
+#X text 275 30 \$2 = Number of samples to generate (has to be power
+of 2);
+#X text 278 53 \$3 = Multiplication to do for each successive "used"
+partial;
+#X text 283 70 \$4 = Modulo to use to decide which partials to use.
+For instance a value of "2" would mean every other partial would be
+used (and the rest 0) while "4" would mean every fourth partial would
+be used and the rest 0;
+#X text 294 129 \$5 = Offset for index. Affects which of the partials
+are used and which are not used. For instance when using a modulo of
+2 \, a value of "1" means every odd partial is used and a value of
+"0" means every even partial is used.;
+#X text 299 244 Feed this abstraction a float representing how many
+partials you want (the more you give it the longer it takes) \, and
+feed the output from this into a send directed towards the table where
+you want the waveshape to be stored.;
+#X obj 283 205 symbol \$1;
+#X obj 270 268 \$2;
+#X obj 148 285 * \$3;
+#X obj 95 209 % \$4;
+#X obj 109 135 \$5;
+#X obj 63 166 f \$5;
+#X obj 24 85 t b b f b b b b;
+#X msg 17 365 normalize;
+#X connect 0 0 24 0;
+#X connect 1 0 2 1;
+#X connect 2 0 5 0;
+#X connect 2 0 21 0;
+#X connect 3 0 5 1;
+#X connect 4 0 3 1;
+#X connect 4 0 5 1;
+#X connect 5 0 3 0;
+#X connect 5 0 6 1;
+#X connect 6 0 7 0;
+#X connect 7 0 9 0;
+#X connect 8 0 25 0;
+#X connect 10 0 22 0;
+#X connect 10 0 24 1;
+#X connect 11 0 2 0;
+#X connect 11 1 12 0;
+#X connect 12 0 5 0;
+#X connect 19 0 5 0;
+#X connect 20 0 5 0;
+#X connect 21 0 2 1;
+#X connect 22 0 11 0;
+#X connect 22 0 24 1;
+#X connect 23 0 24 1;
+#X connect 24 0 10 0;
+#X connect 25 0 26 0;
+#X connect 25 1 6 0;
+#X connect 25 2 0 0;
+#X connect 25 3 1 0;
+#X connect 25 3 23 0;
+#X connect 25 4 20 0;
+#X connect 25 5 19 0;
+#X connect 25 6 4 0;
+#X connect 26 0 9 0;
