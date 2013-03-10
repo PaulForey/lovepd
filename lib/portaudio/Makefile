@@ -18,27 +18,27 @@ libdir = ${exec_prefix}/lib
 includedir = ${prefix}/include
 CC = gcc
 CXX = 
-CFLAGS = -g -O2 -DPA_LITTLE_ENDIAN -I$(top_srcdir)/include -I$(top_srcdir)/src/common -I$(top_srcdir)/src/os/win -DPA_USE_WMME=0 -DPA_USE_ASIO=0 -DPA_USE_WDMKS=0 -DPA_USE_DS=0 -DPA_USE_WASAPI=0 -UPA_USE_WMME -DPA_USE_WMME=1 -mthreads -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DLT_OBJDIR=\".libs/\" -DSIZEOF_SHORT=2 -DSIZEOF_INT=4 -DSIZEOF_LONG=4
-LIBS = -lwinmm -lm -lole32 -luuid
-AR = /mingw/bin/ar
+CFLAGS = -g -O2 -DPA_LITTLE_ENDIAN -I$(top_srcdir)/include -I$(top_srcdir)/src/common -I$(top_srcdir)/src/os/unix  -pthread -DPACKAGE_NAME=\"\" -DPACKAGE_TARNAME=\"\" -DPACKAGE_VERSION=\"\" -DPACKAGE_STRING=\"\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DSTDC_HEADERS=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_MEMORY_H=1 -DHAVE_STRINGS_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_SYS_SOUNDCARD_H=1 -DHAVE_LINUX_SOUNDCARD_H=1 -DSIZEOF_SHORT=2 -DSIZEOF_INT=4 -DSIZEOF_LONG=4 -DHAVE_CLOCK_GETTIME=1 -DHAVE_NANOSLEEP=1 -DPA_USE_ALSA=1 -DPA_USE_JACK=1 -DPA_USE_OSS=1
+LIBS =  -lasound -lm -lpthread
+AR = /usr/bin/ar
 RANLIB = ranlib
 SHELL = /bin/sh
 LIBTOOL = $(SHELL) $(top_builddir)/libtool
-INSTALL = /bin/install -c
+INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
-SHARED_FLAGS = -shared
+SHARED_FLAGS = -fPIC
 LDFLAGS = 
-DLL_LIBS =  -lwinmm
+DLL_LIBS =  -lrt -lasound -ljack -lpthread -lrt  -lm -lpthread
 CXXFLAGS = 
 NASM = 
 NASMOPT = 
-LN_S = cp -p
+LN_S = ln -s
 LT_CURRENT=2
 LT_REVISION=0
 LT_AGE=0
 
-OTHER_OBJS =  src/hostapi/wmme/pa_win_wmme.o src/os/win/pa_win_hostapis.o src/os/win/pa_win_util.o src/os/win/pa_win_waveformat.o
-INCLUDES = portaudio.h
+OTHER_OBJS =  src/hostapi/alsa/pa_linux_alsa.o src/hostapi/jack/pa_jack.o src/common/pa_ringbuffer.o src/hostapi/oss/pa_unix_oss.o src/os/unix/pa_unix_hostapis.o src/os/unix/pa_unix_util.o
+INCLUDES = portaudio.h pa_linux_alsa.h pa_jack.h
 
 PALIB = libportaudio.la
 PAINC = include/portaudio.h

@@ -8,6 +8,19 @@ macosx:
 	gcc -O2 -c -I./lib/libpd/libpd_wrapper/ -o luapd.o luapd.c
 	gcc -bundle -undefined dynamic_lookup luapd.o libpd-osx.a -o luapd.so
 
+linux:
+	gcc -O2 -c -I../libpd/libpd_wrapper/ -I../lua/ -I../luapd/ \
+		-I../portaudio/include -I./lib/ luapd.c -o luapd.o
+	gcc -shared -o luapd.so luapd.o ../libpd/libs/libpd.a ../lua/liblua.a \
+		-L../portaudio/lib/ -lportaudio
+	cp luapd.so ../../
+
+libluapd.a:
+	gcc -O2 -c -I../libpd/libpd_wrapper/ -I../libpd/pure-data/src/ -I../lua/ -I../luapd/ \
+		-I../portaudio/include -I./lib/ luapd.c -o luapd.o
+	ar rcs libluapd.a luapd.o
+	ranlib libluapd.a
+
 libpd.dll:
 	cd ../libpd/ && make ./libs/libpd.a
 	cp ../libpd/libs/libpd.dll ./
