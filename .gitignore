@@ -1,8 +1,8 @@
-.DS_Store
-*~
-*.so
-*.o
-*.a
-*.swp
-*.dll
-_backup
+*
+!*.c
+!*.h
+!*.lua
+!*.pd
+!*.txt
+!*.md
+!*.bat
